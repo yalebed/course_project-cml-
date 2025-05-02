@@ -1,0 +1,127 @@
+.contact-content {
+  @include grid(1fr 1fr, auto, $spacing-lg);
+  padding: $spacing-sm $spacing-xxxl;
+  margin-top: $spacing-xxl;
+  align-items: center;
+  
+  
+  @include mobile {
+    @include grid(1fr, auto, $spacing-md); 
+    padding: $spacing-md;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      font-size: 0.92rem; 
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 0.9rem; 
+      line-height: 1.5; 
+    }
+
+  }
+
+  .title{
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .contact {
+      grid-column: 2;
+      @include flex(column, flex-start, stretch);
+      gap: $spacing-lg;
+      
+      @include mobile {
+        grid-column: 1; 
+        gap: $spacing-md;
+      }
+      .call-me {
+        flex: 1;
+        min-height: 200px;
+        
+        &:nth-child(1) {
+          @include animation(slideUp, 0.8s, ease, 1, 0.3s);
+        }
+        
+        &:nth-child(2) {
+          @include animation(slideUp, 0.8s, ease, 1, 0.4s);
+        }
+        
+        &:nth-child(3) {
+          @include animation(slideUp, 0.8s, ease, 1, 0.5s);
+        }
+      }
+      
+    }
+
+  .map-container {
+    grid-column: 1;
+    background: $primary-dark-transparent;
+    border-radius: $border-radius-lg;
+    padding: $spacing-md;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include transition(transform, $transition-normal);
+    
+    h2 {
+      color: $secondary-color;
+      margin-bottom: $spacing-md;
+      text-align: center;
+    }
+    
+    .footer-map {
+      flex-grow: 1;
+      
+      iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        border-radius: $border-radius-md;
+        @include mobile {
+          min-height: 300px;
+        }
+      }
+    }
+
+       &:hover {
+          transform: translateY(-5px);
+          box-shadow: $shadow-md;
+      }
+     
+      @include mobile {
+          grid-column: 1;
+          padding: $spacing-md;
+        }
+  }
+
+  .contact-info { 
+      background-color: $primary-dark-transparent;
+      border-radius: $border-radius-lg;
+      grid-column: 2;
+      padding: $spacing-xs;
+
+      &:hover {
+          transform: translateY(-5px);
+          box-shadow: $shadow-md;
+      }
+      @include flex(column, center, flex-start);
+      @include transition(transform, $transition-normal);
+
+    @include mobile {
+      grid-column: 1;
+      padding: $spacing-xs;
+      height: auto;
+    }
+    
+    .call-me {
+      padding: $spacing-lg;
+      color: $secondary-color;
+    }
+    
+  }
+}

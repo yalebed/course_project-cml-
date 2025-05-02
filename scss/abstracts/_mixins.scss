@@ -1,0 +1,200 @@
+@mixin mobile {
+  @media (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-md) and (max-width: calc(#{$breakpoint-lg} - 1px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid($columns: 1fr, $rows: auto, $gap: $spacing-md) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+
+@mixin fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@mixin transition($property: all, $duration: $transition-normal, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($name, $duration: 1s, $timing: ease, $iteration: 1, $direction: normal) {
+  animation: $name $duration $timing $iteration $direction;
+}
+
+@mixin button-style($bg-color, $text-color, $hover-bg-color, $hover-text-color: $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  @include transition;
+  
+  &:hover, &:focus {
+    background-color: $hover-bg-color;
+    color: $hover-text-color;
+  }
+}
+
+@mixin card($bg-color: $white, $padding: $spacing-md, $radius: $border-radius-md, $shadow: $shadow-md) {
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin hamburger($width: 30px, $height: 3px, $color: $white, $spacing: 7px) {
+  width: $width;
+  height: $width * 0.7;
+  position: relative;
+  cursor: pointer;
+  
+  span, span::before, span::after {
+    display: block;
+    width: 100%;
+    height: $height;
+    background-color: $color;
+    position: absolute;
+    left: 0;
+    @include transition(transform, $transition-fast);
+  }
+  
+  span {
+    top: 50%;
+    transform: translateY(-50%);
+    
+    &::before, &::after {
+      content: '';
+    }
+    
+    &::before {
+      top: -($height + $spacing);
+    }
+    
+    &::after {
+      top: $height + $spacing;
+    }
+  }
+  
+  &.active span {
+    background-color: transparent;
+    
+    &::before {
+      transform: translateY($height + $spacing) rotate(45deg);
+    }
+    
+    &::after {
+      transform: translateY(-($height + $spacing)) rotate(-45deg);
+    }
+  }
+}
+
+@mixin dropdown {
+  position: relative;
+  
+  .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: $white;
+    min-width: 200px;
+    box-shadow: $shadow-md;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+    @include transition(all, $transition-normal);
+    z-index: $z-index-modal+10;
+    padding: $spacing-xs 0;
+  }
+  
+  &:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@include keyframes(fadeIn) {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@include keyframes(slideUp) {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@include keyframes(pulse) {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+
+@mixin card-style {
+  background: $white;
+  border-radius: $border-radius-medium;
+  border-style: solid;
+  border-color: $primary-color;
+  border-width: 1px;
+  box-shadow: $shadow-default;
+  overflow: hidden;
+}

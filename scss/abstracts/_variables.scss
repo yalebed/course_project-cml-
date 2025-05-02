@@ -1,0 +1,59 @@
+$primary-color: #275941;
+$header-color: rgba(49,63,34, 0.7);
+$footer-color:#313e23;
+$primary-color-light: rgba(39, 89, 65, 0.7);
+$primary-dark: #444623;
+$primary-dark-transparent: rgba(68, 70, 35, 0.8);
+$location-color: $primary-dark-transparent;
+$secondary-color: #e5ddc6;
+$white: #ffffff;
+$black: #000000;
+$gray:rgb(103, 103, 103);
+$respond-color: #ded8ae;
+$text-color:$black;
+$form-color:#a0a376;
+$form-input:#cfc6ad;
+
+$font-primary: 'Comfortaa', sans-serif;
+$font-secondary: 'Ubuntu', sans-serif;
+
+$font-size-xs: 14px;
+$font-size-sm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 36px;
+$font-size-xxl: 48px;
+
+$spacing-xxs: 5px;
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+$spacing-xxxl: 100px;
+$spacing-foot: 170px;
+
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 20px;
+$border-radius-xl: 30px;
+
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$z-index-dropdown: 100;
+$z-index-fixed: 200;
+$z-index-modal: 300;
+$z-index-overlay: 400;
+
+$transition-fast: 0.2s;
+$transition-normal: 0.3s;
+$transition-slow: 0.5s; 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>polyana cafe - о нас</title>
+  </head>
+  <body>
+    <div class="desktop-2">
+      <header class="header">
+        <img class="_97-1" src="img/background.png" alt="Фоновое изображение" />
+        <div class="rectangle-1"></div>
+        
+        <div class="logo">
+          <a href="/">
+            <img src="img/logg.svg" alt="Polyana Cafe" style="height: 45px; width: auto;">
+          </a>
+        </div>
+        
+        <nav class="main-nav">
+          <ul>
+              <li><a href="index.html">главная</a></li>
+              <li><a href="about.html">о нас</a></li>
+              <li class="dropdown"><a href="menu.html">меню</a></li>
+              <li><a href="contact.html">контакты</a></li>
+              <li><a href="vacancy.html">вакансии</a></li>
+          </ul>
+        </nav>
+        
+        <div class="hamburger" id="hamburger">
+          <span></span>
+        </div>
+        
+        <div class="contact-info">
+          <img class="icon" src="img/pace.svg" alt="Часы работы" />
+          <div class="schedule">
+            пн-чт: 10:00-22:00
+            <br />
+            пт-вс: 10:00-00:00
+          </div>
+          
+          <img class="icon" src="img/distance.svg" alt="Адрес" />
+          <div class="address">
+            г. Минск
+            <br />
+            ул. Белорусская 21
+          </div>
+        </div>
+        
+      </header>
+      
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__close" id="closeMenu"></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="about.html">о нас</a></li>
+            <li><a href="menu.html">меню</a></li>
+            <li><a href="contact.html">контакты</a></li>
+            <li><a href="vacancy.html">вакансии</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main class="form">
+          <div class="info">
+              <h2>Спасибо, что хотите быть с нами!</h2>
+          </div>
+          <div class="form-wrapper">
+              <form id="applicationForm">
+                  <div class="form-group">
+                      <label for="firstName" class="form-label">Ваше имя</label>
+                      <div class="form-input-container">
+                          <input type="text" id="firstName" class="form-input" required>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="lastName" class="form-label">Ваша фамилия</label>
+                      <div class="form-input-container">
+                          <input type="text" id="lastName" class="form-input" required>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="birthDate" class="form-label">Дата рождения</label>
+                      <div class="form-input-container">
+                          <input type="date" id="birthDate" class="form-input" required>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="phone" class="form-label">Ваш телефон</label>
+                      <div class="form-input-container">
+                          <input type="tel" id="phone" class="form-input" required>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="email" class="form-label">Ваша почта</label>
+                      <div class="form-input-container">
+                          <input type="email" id="email" class="form-input" required>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="position" class="form-label">Желаемая<br>должность</label>
+                      <div class="form-input-container">
+                          <select id="position" class="form-input" required>
+                          <option value="">выберите</option>
+                          <option value="Менеджер">бариста</option>
+                          <option value="Разработчик">официант</option>
+                          <option value="Дизайнер">повар</option>
+                          <option value="Аналитик">администратор</option>
+                      </select>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="comments" class="form-label">Добавьте<br>комментарий</label>
+                      <div class="form-input-container">
+                          <textarea id="comments" class="form-input"></textarea>
+                      </div>
+                  </div>
+                  <div class="submit-button">
+                      <button type="submit" class="submit-btn">отправить</button>
+                  </div>
+                  
+              </form>
+          </div>   
+      </main>
+      
+      <footer class="site-footer">
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="img/logg.svg" alt="Polyana Cafe" style="height: 45px; width: auto;">
+            </a>
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">главная</a></li>
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="menu.html">меню</a></li>
+              <li><a href="contact.html">контакты</a></li>
+              <li><a href="vacancy.html">вакансии</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="js/events.js"></script>
+    <script src="js/head.js"></script>
+    <script src="js/form.js"></script>
+  
+  </body>
+</html>

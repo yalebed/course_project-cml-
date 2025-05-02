@@ -1,0 +1,129 @@
+.main-content {
+  .category-nav {
+    background-color: rgba($primary-color, 0.2);
+    padding: $spacing-sm 0;
+    position: sticky;
+    top: 0;
+    z-index: $z-index-fixed;
+    backdrop-filter: blur(10px);
+    
+    @include mobile {
+      padding: $spacing-xs 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: $spacing-sm;
+      
+      @include mobile {
+        justify-content: flex-start;
+        padding: 0 $spacing-xxs;
+      }
+    }
+
+    &__link {
+      @include button-style(
+        rgba($primary-dark, 0.5),
+        $text-color,
+        rgba($primary-dark, 0.7)
+      );
+      padding: $spacing-xs $spacing-md;
+      border-radius: $border-radius-xl;
+      font-size: $font-size-sm;
+      font-family: $font-primary;
+      text-decoration: none;
+      transition: all $transition-fast;
+      white-space: nowrap;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+      
+      &.active {
+        background-color: rgba($primary-dark, 0.3);
+        font-weight: bold;
+      }
+      
+      @include mobile {
+        padding: $spacing-xxs $spacing-sm;
+        font-size: $font-size-xs;
+      }
+    }
+  }
+
+  @include mobile{
+    padding:60px 0 $spacing-xs 0;
+  }
+    .pop-dish {
+      padding: $spacing-xxl 0 $spacing-xxs 0;
+      @include mobile{
+        padding: $spacing-md 0 $spacing-xxs 0;
+      }
+  
+      .dishes__container {
+        max-width: calc(288px * 4 + $spacing-md * 3);
+        margin: 0 auto;
+        padding: 0 $spacing-sm;
+  
+        .dishes__title {
+          text-align: center;
+          margin-bottom: $spacing-lg;
+          margin-top: $spacing-lg;
+          color: $text-color;
+        }
+  
+        .category-section {
+          margin-bottom: $spacing-xl;
+          padding: 0 $spacing-md;
+          &:last-child{
+            margin-bottom: $spacing-xs;
+          }
+
+          h2 {
+            text-align: center;
+            margin: 0 auto $spacing-sm;
+            padding: $spacing-sm $spacing-lg;
+            font-size: $font-size-xl;
+            color: $text-color;
+            background-color: rgba($primary-color, 0.15);
+            border-radius: $border-radius-xl;
+            display: inline-block;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+          
+            @include mobile {
+              font-size: $font-size-lg;
+              padding: $spacing-xs ;
+            }
+          }
+
+          .dishes__grid {
+            display: grid;
+            justify-content: center;
+            gap: $spacing-md;
+            margin-top: $spacing-xxs;
+            
+            @include desktop {
+              grid-template-columns: repeat(4, 1fr);
+            }
+            
+            @include tablet {
+              grid-template-columns: repeat(2, 288px);
+            }
+            
+            @include mobile {
+              grid-template-columns: 288px;
+              gap: $spacing-sm;
+            }
+          }
+        }
+      }
+    }
+  }

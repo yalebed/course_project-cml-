@@ -1,0 +1,145 @@
+.vacancy-content {
+    @include grid(1fr, auto, $spacing-lg);
+    padding: $spacing-md $spacing-xxxl;
+    margin-top: $spacing-lg;
+    
+    @include mobile {
+      @include grid(1fr, auto, $spacing-sm);
+      padding: $spacing-lg $spacing-xs 0;
+      
+      h2 {
+        font-size: 1.3rem;
+        padding: 0 $spacing-xs;
+      }
+      h3{
+        font-size: 1rem; 
+      }
+    }
+
+
+    .reasons, .before {
+        @include grid(1fr 1fr, auto, $spacing-lg);
+        margin-top: $spacing-xs;
+
+        .info {
+            text-align: center;
+            grid-column: 1 / -1;
+            
+            @include mobile {
+              padding: 0 $spacing-xs;
+            }
+        }
+        
+        .reason {
+            background-color: $primary-dark-transparent;
+            border-radius: $border-radius-lg;
+            padding: $spacing-lg; 
+            text-align: center;
+            justify-items: center;
+            @include flex(column, center, flex-start);
+            @include transition(transform, $transition-normal);
+            
+            h1, h2, p {
+                color: $secondary-color;
+            }
+            
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: $shadow-md;
+            }
+            
+            @include mobile {
+              padding: $spacing-md $spacing-sm;
+              margin: 0 $spacing-xs;
+            }
+        }
+        
+        @include mobile {
+            @include grid(1fr, auto, $spacing-sm);
+            padding: $spacing-xs;
+            
+            .reason {
+              grid-column: 1;
+              min-height: auto;
+            }
+        }
+    }
+
+    .vacancies {
+        @include grid(1fr 1fr, auto, $spacing-lg);
+        margin-top: $spacing-xs;
+
+        .info {
+            text-align: center;
+            grid-column: 1 / -1;
+            
+            @include mobile {
+              padding: 0 $spacing-xs;
+            }
+        }
+
+        .vacancy {
+            background-color: $primary-dark-transparent;
+            border-radius: $border-radius-lg;
+            padding: $spacing-md;
+            text-align: center; 
+            justify-items: center; 
+            
+            h1, h2, p {
+                color: $secondary-color;
+            }
+
+            img {
+                width: 60%;
+                height: auto;
+                margin-bottom: 15px;
+                
+                @include mobile {
+                  width: 50%;
+                }
+            }
+            
+            .btn {
+                @include button-style(
+                    rgba($respond-color, 0.6),
+                    $black,
+                    rgba($respond-color, 1.0)
+                );
+                a{
+                    color: $black;
+                }
+                font-family: $font-primary;
+                font-size: $font-size-md;
+                padding: $spacing-sm $spacing-lg;
+                border-radius: $border-radius-xl;
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: $shadow-md;
+                    @include animation(pulse, 1s, ease, infinite);
+                }
+                  
+                &:active {
+                    transform: translateY(-1px);
+                }
+
+                @include mobile {
+                    font-size: $font-size-xs;
+                    padding: $spacing-xxs $spacing-sm;
+                    border-radius: $border-radius-lg;
+                    margin: 0 $spacing-xs;
+                }
+            }
+            
+            @include mobile {
+              padding: $spacing-sm;
+              margin: 0 $spacing-xs;
+            }
+        }
+
+        @include mobile {
+            @include grid(1fr, auto, $spacing-sm);
+            padding: $spacing-xs $spacing-xs 0;
+        }
+    }
+}

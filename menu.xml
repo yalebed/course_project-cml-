@@ -1,0 +1,234 @@
+<menu>
+    <category name="Завтраки">
+        <dish>
+            <name>Сырники классические</name>
+            <weight>240г</weight>
+            <price>10.00 BYN</price>
+            <image>img/menu/sirniki.png</image>
+        </dish>
+        <dish>
+            <name>Панкейки с черникой</name>
+            <weight>125г</weight>
+            <price>6.00 BYN</price>
+            <image>img/menu/pancake.png</image>
+        </dish>
+        <dish>
+            <name>Омлет с овощами</name>
+            <weight>200г</weight>
+            <price>10.00 BYN</price>
+            <image>img/menu/omlet.png</image>
+        </dish>
+        <dish>
+            <name>Тосты с авокадо</name>
+            <weight>240г</weight>
+            <price>12.00 BYN</price>
+            <image>img/menu/avocado-toast.png</image>
+        </dish>
+        <dish>
+            <name>Чиа пуддинг с манго</name>
+            <weight>200г</weight>
+            <price>14.00 BYN</price>
+            <image>img/menu/chia-pudding.png</image>
+        </dish>
+        <dish>
+            <name>Смузи боул с фруктами</name>
+            <weight>200г</weight>
+            <price>12.00 BYN</price>
+            <image>img/menu/smoothie-bowl.png</image>
+        </dish>
+    </category>
+    <category name="Основные блюда">
+        <dish>
+            <name>Паста с грибами</name>
+            <weight>400г</weight>
+            <price>25.00 BYN</price>
+            <image>img/menu/paste.png</image>
+        </dish>
+        <dish>
+            <name>Лазанья с мясом</name>
+            <weight>350г</weight>
+            <price>20.00 BYN</price>
+            <image>img/menu/lazania.png</image>
+        </dish>
+          <dish>
+            <name>Рыба на гриле с овощами</name>
+            <weight>400г</weight>
+            <price>30.00 BYN</price>
+            <image>img/menu/fish.png</image>
+        </dish>
+        <dish>
+            <name>Куриное филе</name>
+            <weight>200г</weight>
+            <price>16.00 BYN</price>
+            <image>img/menu/chicken.png</image>
+        </dish>
+          <dish>
+            <name>Брокколи с чесноком</name>
+            <weight>130г</weight>
+            <price>12.00 BYN</price>
+            <image>img/menu/broccoli.png</image>
+        </dish>
+        <dish>
+            <name>Сливочный луковывй суп</name>
+            <weight>300г</weight>
+            <price>15.00 BYN</price>
+            <image>img/menu/onion-soup.png</image>
+        </dish>
+        <dish>
+            <name>Грибной крем-суп</name>
+            <weight>300г</weight>
+            <price>16.00 BYN</price>
+            <image>img/menu/mushroom-soup.png</image>
+        </dish>
+        <dish>
+            <name>Брускетта с томатами</name>
+            <weight>120г</weight>
+            <price>10.00 BYN</price>
+            <image>img/menu/brusketta.png</image>
+        </dish>
+    </category>
+    <category name="Салаты">
+        <dish>
+            <name>Греческий салат</name>
+            <weight>200г</weight>
+            <price>16.00 BYN</price>
+            <image>img/menu/greek-salad.png</image>
+        </dish>
+        <dish>
+            <name>Цезарь с курицей</name>
+            <weight>200г</weight>
+            <price>18.00 BYN</price>
+            <image>img/menu/caesar-chicken.png</image>
+        </dish>
+         <dish>
+            <name>Цезарь с креветками</name>
+            <weight>200г</weight>
+            <price>3.00 BYN</price>
+            <image>img/menu/caesar-shrimp.png</image>
+        </dish>
+        <dish>
+            <name>Салат с фенхелем</name>
+            <weight>200г</weight>
+            <price>16.00 BYN</price>
+            <image>img/menu/fennel-salad.png</image>
+        </dish>
+    </category>
+    <category name="Напитки">
+        <dish>
+            <name>Латте</name>
+            <weight>200мл</weight>
+            <price>4.00 BYN</price>
+            <image>img/menu/latte.png</image>
+        </dish>
+        <dish>
+            <name>Американо</name>
+            <weight>200мл</weight>
+            <price>3.00 BYN</price>
+            <image>img/menu/americano.png</image>
+        </dish>
+        <dish>
+            <name>Двойной эспрессо</name>
+            <weight>80мл</weight>
+            <price>2.50 BYN</price>
+            <image>img/menu/espresso.png</image>
+        </dish>
+        <dish>
+            <name>Халвичный раф</name>
+            <weight>300мл</weight>
+            <price>6.00 BYN</price>
+            <image>img/menu/raf.png</image>
+        </dish>
+        <dish>
+            <name>Облепиховый чай</name>
+            <weight>250мл</weight>
+            <price>5.00 BYN</price>
+            <image>img/menu/oblepih-tea.png</image>
+        </dish>
+        <dish>
+            <name>Зеленый чай</name>
+            <weight>250мл</weight>
+            <price>3.00 BYN</price>
+            <image>img/menu/green-tea.png</image>
+        </dish>
+        <dish>
+            <name>Черный чай</name>
+            <weight>250мл</weight>
+            <price>3.00 BYN</price>
+            <image>img/menu/black-tea.png</image>
+        </dish>
+        <dish>
+            <name>Лимонад лимон-мятой</name>
+            <weight>300мл</weight>
+            <price>5.00 BYN</price>
+            <image>img/menu/lemon-mint.png</image>
+        </dish>
+        <dish>
+            <name>Лимонад с грейпфрутом</name>
+            <weight>300мл</weight>
+            <price>5.50 BYN</price>
+            <image>img/menu/grapefruit.png</image>
+        </dish>
+        <dish>
+            <name>Лимонад с клубникой</name>
+            <weight>300мл</weight>
+            <price>5.00 BYN</price>
+            <image>img/menu/strawberry.png</image>
+        </dish>
+        <dish>
+            <name>Смузи из лесных ягод</name>
+            <weight>300мл</weight>
+            <price>11.00 BYN</price>
+            <image>img/menu/wildberry.png</image>
+        </dish>
+        <dish>
+            <name>Смузи тропический</name>
+            <weight>300мл</weight>
+            <price>11.00 BYN</price>
+            <image>img/menu/tropic.png</image>
+        </dish>
+    </category>
+    <category name="Десерты">
+        <dish>
+            <name>Чизкейк с ягодами</name>
+            <weight>120г</weight>
+            <price>7.00 BYN</price>
+            <image>img/menu/cheesecake.png</image>
+        </dish>
+        <dish>
+            <name>Тирамису</name>
+            <weight>120г</weight>
+            <price>8.00 BYN</price>
+            <image>img/menu/tiramisu.png</image>
+        </dish>
+         <dish>
+            <name>Медовик</name>
+            <weight>120г</weight>
+            <price>7.00 BYN</price>
+            <image>img/menu/honey-cake.png</image>
+        </dish>
+        <dish>
+            <name>Красный бархат</name>
+            <weight>120г</weight>
+            <price>8.00 BYN</price>
+            <image>img/menu/red-velvet.png</image>
+        </dish>
+        <dish>
+            <name>Ванильное мороженное</name>
+            <weight>100г</weight>
+            <price>4.00 BYN</price>
+            <image>img/menu/vanil-ice.png</image>
+        </dish>
+        <dish>
+            <name>Шоколадное мороженное</name>
+            <weight>100г</weight>
+            <price>4.00 BYN</price>
+            <image>img/menu/choco-ice.png</image>
+        </dish>
+        <dish>
+            <name>Кофейное мороженное</name>
+            <weight>100г</weight>
+            <price>4.00 BYN</price>
+            <image>img/menu/coffe-ice.png</image>
+        </dish>
+    </category>
+</menu>
