@@ -1,151 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./scss/main.css">
-  <title>polyana cafe - о нас</title>
-</head>
-<body>
-  <div class="desktop-2">
-    <header class="header">
-      <img class="_97-1" src="img/background.png" alt="Фоновое изображение" />
-      <div class="rectangle-1"></div>
-      
-      <div class="logo">
-        <a href="/">
-          <img src="img/logg.svg" alt="Polyana Cafe" style="height: 45px; width: auto;">
-        </a>
-      </div>
-      
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">главная</a></li>
-          <li><a href="about.html">о нас</a></li>
-          <li class="dropdown"><a href="menu.html">меню</a></li>
-          <li><a href="contact.html">контакты</a></li>
-          <li><a href="vacancy.html" class="active">вакансии</a></li>
-        </ul>
-      </nav>
-      
-      <div class="hamburger" id="hamburger">
-        <span></span>
-      </div>
-      
-      <div class="contact-info">
-        <img class="icon" src="img/pace.svg" alt="Часы работы" />
-        <div class="schedule">
-          пн-чт: 10:00-22:00
-          <br />
-          пт-вс: 10:00-00:00
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>polyana cafe - о нас</title>
+  </head>
+  <body>
+    <div class="desktop-2">
+      <header class="header">
+        <img class="_97-1" src="img/background.png" alt="Фоновое изображение" />
+        <div class="rectangle-1"></div>
         
-        <img class="icon" src="img/distance.svg" alt="Адрес" />
-        <div class="address">
-          г. Минск
-          <br />
-          ул. Белорусская 21
-        </div>
-      </div>
-    </header>
-    
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="mobile-menu__close" id="closeMenu"></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">главная</a></li>
-          <li><a href="about.html">о нас</a></li>
-          <li><a href="menu.html">меню</a></li>
-          <li><a href="contact.html">контакты</a></li>
-          <li><a href="vacancy.html">вакансии</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <main class="vacancy-content">
-
-        <div class="before">
-          <div class="info">
-            <h2>Вакансии в "Polyana Cafe"</h2>
-          </div>
-            <div class="reason">
-              <p>Присоединяйтесь к нашей команде и станьте частью уютного заведения "Polyana Cafe"!</p>
-          </div>
-          <div class="reason">
-            <p>Мы ищем талантливых сотрудников, которые помогут развивать наше кафе.</p>
-          </div>
-        </div>
-
-        <div class="reasons">
-            <div class="info">
-                <h2>Почему стоит у нас работать?</h2>
-            </div>
-            <div class="reason">
-                <p>Мы создаём дружелюбную и поддерживающую атмосферу, где каждый может выразить свои идеи и внести свой вклад.</p>
-            </div>
-            <div class="reason">
-                <p>Мы предоставляем возможности для профессионального роста и обучения, чтобы каждый член команды мог развиваться и достигать новых высот.</p>
-            </div>
-            <div class="reason">
-                <p>Работая в нашем кафе, вы будете окружены прекрасным интерьером и атмосферой, вдохновлённой природой, что сделает вашу работу более приятной.</p>
-            </div>
-            <div class="reason">
-                <p>Мы понимаем важность баланса между работой и личной жизнью и предлагаем гибкие графики для наших сотрудников.</p>
-            </div>
-        </div>
-       
-        <div class="vacancies">
-            <div class="info">
-                <h2>Кого мы ищем?</h2>
-            </div>
-
-            <div class="vacancy">
-                <h2>Бариста</h2>
-                <img src="img/barista.png" alt="Бариста" />
-                <p>Ищем энергичного баристу, который любит кофе и общение с клиентами.</p>
-                <div class="btn">
-                    <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
-                </div> 
-            </div>
-    
-            <div class="vacancy">
-                <h2>Официант</h2>
-                <img src="img/waiter.png" alt="Официант" />                
-                <p>Требуется внимательный официант для обслуживания наших гостей.</p>
-                <div class="btn">
-                    <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
-                </div>
-            </div>
-    
-            <div class="vacancy">
-                <h2>Повар</h2>
-                <img src="img/chef.png" alt="Повар" />               
-                <p>Ищем креативного повара, который готов создавать уникальные блюда.</p>
-                <div class="btn">
-                    <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
-                </div>
-            </div>
-    
-            <div class="vacancy">
-                <h2>Администратор</h2>
-                <img src="img/admin.png" alt="Администратор" />                
-                <p>Требуется администратор, который будет управлять процессами в кафе.</p>
-                <div class="btn">
-                    <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-bottom">
-        <div class="footer-logo">
+        <div class="logo">
           <a href="/">
             <img src="img/logg.svg" alt="Polyana Cafe" style="height: 45px; width: auto;">
           </a>
         </div>
-        <nav class="footer-nav">
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">главная</a></li>
+            <li><a href="about.html">о нас</a></li>
+            <li class="dropdown"><a href="menu.html">меню</a></li>
+            <li><a href="contact.html">контакты</a></li>
+            <li><a href="vacancy.html" class="active">вакансии</a></li>
+          </ul>
+        </nav>
+        
+        <div class="hamburger" id="hamburger">
+          <span></span>
+        </div>
+        
+        <div class="contact-info">
+          <img class="icon" src="img/pace.svg" alt="Часы работы" />
+          <div class="schedule">
+            пн-чт: 10:00-22:00
+            <br />
+            пт-вс: 10:00-00:00
+          </div>
+          
+          <img class="icon" src="img/distance.svg" alt="Адрес" />
+          <div class="address">
+            г. Минск
+            <br />
+            ул. Белорусская 21
+          </div>
+        </div>
+      </header>
+      
+      <section class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__close" id="closeMenu"></div>
+        <nav>
           <ul>
             <li><a href="index.html">главная</a></li>
             <li><a href="about.html">о нас</a></li>
@@ -154,11 +61,103 @@
             <li><a href="vacancy.html" class="active">вакансии</a></li>
           </ul>
         </nav>
-      </div>
-    </footer>
-  </div>
-  
-  <script src="js/events.js"></script>
-  <script src="js/head.js"></script>
-</body>
+      </section>
+
+      <main class="vacancy-content">
+        <section class="before">
+          <div class="info">
+            <h2>Вакансии в "Polyana Cafe"</h2>
+          </div>
+          <div class="reason">
+            <p>Присоединяйтесь к нашей команде и станьте частью уютного заведения "Polyana Cafe"!</p>
+          </div>
+          <div class="reason">
+            <p>Мы ищем талантливых сотрудников, которые помогут развивать наше кафе.</p>
+          </div>
+        </section>
+
+        <section class="reasons">
+          <div class="info">
+            <h2>Почему стоит у нас работать?</h2>
+          </div>
+          <div class="reason">
+            <p>Мы создаём дружелюбную и поддерживающую атмосферу, где каждый может выразить свои идеи и внести свой вклад.</p>
+          </div>
+          <div class="reason">
+            <p>Мы предоставляем возможности для профессионального роста и обучения, чтобы каждый член команды мог развиваться и достигать новых высот.</p>
+          </div>
+          <div class="reason">
+            <p>Работая в нашем кафе, вы будете окружены прекрасным интерьером и атмосферой, вдохновлённой природой, что сделает вашу работу более приятной.</p>
+          </div>
+          <div class="reason">
+            <p>Мы понимаем важность баланса между работой и личной жизнью и предлагаем гибкие графики для наших сотрудников.</p>
+          </div>
+        </section>
+      
+        <section class="vacancies">
+          <div class="info">
+            <h2>Кого мы ищем?</h2>
+          </div>
+
+          <div class="vacancy">
+            <h2>Бариста</h2>
+            <img src="img/barista.png" alt="Бариста" />
+            <p>Ищем энергичного баристу, который любит кофе и общение с клиентами.</p>
+            <div class="btn">
+              <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
+            </div> 
+          </div>
+    
+          <div class="vacancy">
+            <h2>Официант</h2>
+            <img src="img/waiter.png" alt="Официант" />                
+            <p>Требуется внимательный официант для обслуживания наших гостей.</p>
+            <div class="btn">
+              <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
+            </div>
+          </div>
+    
+          <div class="vacancy">
+            <h2>Повар</h2>
+            <img src="img/chef.png" alt="Повар" />               
+            <p>Ищем креативного повара, который готов создавать уникальные блюда.</p>
+            <div class="btn">
+              <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
+            </div>
+          </div>
+    
+          <div class="vacancy">
+            <h2>Администратор</h2>
+            <img src="img/admin.png" alt="Администратор" />                
+            <p>Требуется администратор, который будет управлять процессами в кафе.</p>
+            <div class="btn">
+              <button class="look-around-btn" id="respondBtn"><a href="form.html">откликнуться</a></button>                    
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="img/logg.svg" alt="Polyana Cafe" style="height: 45px; width: auto;">
+            </a>
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="index.html">главная</a></li>
+              <li><a href="about.html">о нас</a></li>
+              <li><a href="menu.html">меню</a></li>
+              <li><a href="contact.html">контакты</a></li>
+              <li><a href="vacancy.html" class="active">вакансии</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="js/events.js"></script>
+    <script src="js/head.js"></script>
+  </body>
 </html>
