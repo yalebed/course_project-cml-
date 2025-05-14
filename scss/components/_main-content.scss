@@ -1,0 +1,149 @@
+.about-cafe {
+  padding: $spacing-md $spacing-xxxl;
+  margin-top: $spacing-xl;
+  grid-column: 1 / span 2;
+  @include grid(1fr 1fr, auto, $spacing-lg);
+  
+  @include animation(fadeIn, 0.8s);
+
+
+  .cafe-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    border-radius: $border-radius-lg;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    
+    &.active {
+      opacity: 1;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+    
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba($white, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+      &.active {
+        background: $secondary-color;
+      }
+    }
+  }
+  
+
+  .criteria {
+    grid-column: 2;
+    height: 100%;
+    min-height: 300px;
+    font-size: $font-size-lg;
+    padding-top: 40px;
+    padding-left: $spacing-lg;
+    
+    .criteria-item {
+      display: flex; 
+      align-items: center;
+      
+      .schedule {
+        margin-left: $spacing-md; 
+        line-height: 5;
+        text-align: center;
+      }
+    }
+  }
+  
+  .image-container {
+    grid-column: 1;
+    height: 100%;
+    min-height: 300px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    @include animation(slideUp, 0.8s, ease, 1, 0.2s);
+  }
+  
+  @include mobile {
+    margin: $spacing-md auto; 
+    padding: 0 $spacing-md;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+
+    display: flex; 
+    flex-direction: column;
+    gap: $spacing-md;
+    
+    .image-container {
+      grid-column: 1;
+      min-height: auto;
+      height: 300px;
+      width: 100%;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    .criteria {
+      grid-column: 1;
+      padding: $spacing-xs;
+      min-height: auto;
+      font-size: $font-size-md;
+      
+      .criteria-item {
+        line-height: 1.5;
+        margin-bottom: $spacing-sm;
+        
+        .schedule {
+          margin-left: $spacing-sm;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

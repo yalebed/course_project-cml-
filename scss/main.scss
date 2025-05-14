@@ -1,0 +1,18 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/about-content';
+@import 'components/vacancy-content';
+@import 'components/main-content';
+@import 'components/food-card';
+@import 'components/contact-content';
+@import 'components/menu-content';
+@import 'components/form';
+
+@import 'responsive/mobile'; 

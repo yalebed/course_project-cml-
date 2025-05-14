@@ -1,0 +1,37 @@
+@media (max-width: $breakpoint-md) {
+  body {
+    font-size: 14px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+  }
+  
+  .welcome-block {
+    display: flex;
+    flex-direction: column;
+    
+    .text-content {
+      order: 1;
+    }
+    
+    .image-container {
+      order: 2;
+    }
+  }
+  
+  .interior-left-column,
+  .interior-right-column {
+    width: 100%;
+  }
+  
+  .text-content, 
+  .location-block {
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+  
+} 
